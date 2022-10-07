@@ -1,0 +1,32 @@
+.my_modal {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.myModalContent {
+    width: 800px;
+    height: 410px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.my_modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:720px) {
+    .myModalContent {
+        min-height: 80vh;
+        max-width: 90vw;
+    } 
+
+}

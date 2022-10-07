@@ -1,0 +1,65 @@
+.body {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+.body input {
+    margin: 0px 0 10px 0px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn button {
+    margin: 20px 0 0 0;
+    border: 1px solid #222;
+    color: #222;
+    min-width: 230px;
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn button:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn button:focus {
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    color: rgb(138, 4, 4);
+    margin: 0;
+}
+
+@media (max-width:720px) {
+    .body {
+        padding: 20px 30px 0 20px;
+    }
+    .body input {
+        margin: 10px 0 10px 15px;
+        width: 84%;
+        border-radius: 5px;
+
+    }
+    .btn button {
+        width: 95%;
+        margin: 30px 0 10px 15px;
+        font-size: 18px;
+    }
+    
+    
+}

@@ -1,0 +1,97 @@
+.body {
+    padding: 20px;
+    overflow: scroll;
+    height: 100vh;
+    margin-top: -70px;
+    background-image: linear-gradient(90deg, #AEC670 0%, #AEC09A 100%);
+
+}
+
+.title {
+    font-size: 2.1rem;
+    color:  #1A2902;
+    text-transform: uppercase;
+    text-align: start;
+    margin-top: 7vh;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+    
+}
+
+.items {
+    margin: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 20px 15px 0px 20px;
+    min-height: 45vh;
+    position: relative;
+    box-shadow: -5px -5px 20px #d6f58e, 7px 7px 20px #5c8a03;
+}
+
+.items a {
+    text-decoration: none;
+    color: rgb(51, 135, 141);
+    position: absolute;
+    bottom: 4vh;
+    right: 3rem;
+}
+
+.items a:hover {
+    
+    color: rgba(7, 67, 117, 0.884);
+}
+
+.titleInBlock {
+    font-weight: 300;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #252525;
+    padding-bottom: 1.3vh;
+}
+
+.textInBlock {
+    font-family: Roboto;
+    color: #777777;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-bottom: 1.3 vw;
+}
+
+.textInBlock span {
+    text-transform: uppercase;
+    
+}
+
+@media (max-width:720px) {
+    .title {
+        margin: 2vw 0;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+
+    .items {
+        min-height: 25vw;
+    }
+
+    .items a {
+        bottom: 5px;
+        right: 5;
+    }
+
+}

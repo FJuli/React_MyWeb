@@ -1,0 +1,19 @@
+.myByttonWhite, .myByttonBlack  {
+    min-height: 35px;
+    font-size: 25px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.myByttonBlack{
+    color:  #1A2902;
+} 
+
+.myByttonWhite:hover{
+    
+    border-bottom: 1px solid greenyellow;
+} 

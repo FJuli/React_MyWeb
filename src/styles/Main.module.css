@@ -1,0 +1,88 @@
+:root {
+    --animation: (300ms);
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+    z-index: -1;
+
+}
+
+.layers {
+}
+
+.layerDown {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/fon/font-main.png');
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    transform: translateY(-3rem);
+}
+
+.layerUp {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('../img/fon/font-main2.png');
+    background-position: center;
+    background-size: cover;
+    will-change: transform;
+    z-index: 10;
+
+}
+
+
+.block_text {
+    height: 450px;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    left: 40vw;
+    top: 35vh;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    display: flex;
+    font-size: 2.5rem;
+    color: azure;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+}
+
+.text {
+    margin-top: 1.3vh;
+    font-size: 1.3rem;
+    color: rgb(299, 299, 299, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.button_about {
+    margin-top: 27vh;
+}
+
+/* 
+@media (max-width:720px) {
+    .title {
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    .button_about {
+        margin: 180px 0;
+    }
+
+
+    
+} */

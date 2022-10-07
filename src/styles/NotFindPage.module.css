@@ -1,0 +1,26 @@
+.body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #222 ;
+    margin-top: 100px;
+     margin-bottom: 35px;
+}
+.block {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.block a {
+ 
+    color: blueviolet;
+
+}
+
+.body a:hover {
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.2);
+}

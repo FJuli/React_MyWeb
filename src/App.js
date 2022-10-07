@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Routers from './components/Routers';
+import React, { useState, useMemo } from 'react'
+
 
 function App() {
+  const [modal, setModal] = useState(false);
+  const iam = useMemo(
+    () => ({ name: 'Yulia', surname: 'Furashova', phone: '+90 (505) 742 38 64', email: 'juliapetrova95@gmail.com' }),
+    []
+  )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Routers iam={iam} modal={modal} setModal={setModal} />
     </div>
   );
 }
 
-export default App;
+export default App; 
